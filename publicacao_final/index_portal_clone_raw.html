@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Visualizações: Macrófitas de Santa Catarina</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0066cc;
+            --success: #2a9d8f;
+            --warning: #f1a208;
+            --danger: #e63946;
+            --bg: #f5f5f5;
+            --text: #1a1a1a;
+            --card: #ffffff;
+            --border: #d0d0d0;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode {
+            --bg: #1a1a1a;
+            --text: #e9ecef;
+            --card: #2d3748;
+            --border: #495057;
+            --shadow: rgba(0, 0, 0, 0.3);
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--text);
+            transition: all 0.3s ease;
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        body.dark-mode {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 40px 20px 20px 20px;
+        }
+
+        header {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 32px 10px 18px 10px;
+            border: 1px solid #e0e0e0;
+            text-shadow: none;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            font-size: 19px;
+            opacity: 1;
+            color: #388e3c;
+            font-weight: 600;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 0 2px 8px var(--shadow);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .theme-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .body.dark-mode .theme-toggle {
+            background: #333;
+            color: #e9ecef;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border-left: 5px solid var(--primary);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #e0e0e0;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px var(--shadow);
+        }
+
+        .card.primary {
+            border-left-color: var(--primary);
+            background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 102, 204, 0.02) 100%);
+        }
+
+        .card.success {
+            border-left-color: var(--success);
+            background: linear-gradient(135deg, rgba(42, 157, 143, 0.05) 0%, rgba(42, 157, 143, 0.02) 100%);
+        }
+
+        .card.warning {
+            border-left-color: var(--warning);
+            background: linear-gradient(135deg, rgba(241, 162, 8, 0.05) 0%, rgba(241, 162, 8, 0.02) 100%);
+        }
+
+        .card.info {
+            border-left-color: #0088cc;
+            background: linear-gradient(135deg, rgba(0, 136, 204, 0.05) 0%, rgba(0, 136, 204, 0.02) 100%);
+        }
+
+        .card-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .card-desc {
+            font-size: 15px;
+            color: #222;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            flex-grow: 1;
+            background: rgba(255,255,255,0.92);
+            border-radius: 8px;
+            padding: 10px 12px 10px 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .dark-mode .card-desc {
+            color: #aaa;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0052a3;
+            transform: translateX(2px);
+        }
+
+        .btn-success {
+            background: var(--success);
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #1d7d76;
+            transform: translateX(2px);
+        }
+
+        .btn-warning {
+            background: var(--warning);
+            color: white;
+        }
+
+        .btn-warning:hover {
+            background: #d68b00;
+            transform: translateX(2px);
+        }
+
+        .btn-info {
+            background: #0088cc;
+            color: white;
+        }
+
+        .btn-info:hover {
+            background: #0066aa;
+            transform: translateX(2px);
+        }
+
+        .stats {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+            margin-bottom: 28px;
+            background: rgba(255,255,255,0.92);
+            padding: 18px 10px;
+            border-radius: 14px;
+            color: #1a1a1a;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+
+        .stat-item {
+            text-align: center;
+            min-width: 170px;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 2px;
+            color: #2a9d8f;
+        }
+
+        .stat-label {
+            font-size: 15px;
+            opacity: 1;
+            color: #444;
+        }
+
+        .footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .features {
+            background: var(--card);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .features h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        .features ul {
+            column-count: 2;
+            gap: 20px;
+        }
+
+        .features li {
+            margin-bottom: 8px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .dark-mode .features li {
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .features ul {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+<div class="container">
+    <header>
+        <h1>🌿 Macrófitas de Santa Catarina</h1>
+        <p class="subtitle">Portal de Visualizações Interativas</p>
+        <p style="max-width:700px;margin:18px auto 0 auto;font-size:17px;color:#333;line-height:1.7;">
+            Este portal reúne visualizações interativas, mapas e dados sobre a diversidade, distribuição e relações evolutivas das macrófitas marinhas da Ilha de Santa Catarina. Explore cladogramas, mapas georreferenciados, estatísticas e um glossário completo para apoiar estudos, ensino e divulgação científica sobre biodiversidade marinha.
+        </p>
+    </header>
+
+    <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">165</div>
+                <div class="stat-label">Espécies</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Filos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Classes</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">45</div>
+                <div class="stat-label">Estações de Coleta</div>
+            </div>
+    </div>
+
+    <div class="cards">
+        <div class="card primary">
+            <div class="card-icon">🌳</div>
+            <div class="card-title">Cladograma Interativo Melhorado</div>
+            <div class="card-desc">
+                Explore a árvore filogenética completa das macrófitas marinhas da Ilha de Santa Catarina. Esta versão avançada permite filtrar por filo, pesquisar espécies, expandir/colapsar ramos, visualizar toda a hierarquia taxonômica ao clicar em um nó, acessar estatísticas dinâmicas, exportar o gráfico em SVG e alternar entre modo claro e escuro. Ideal para análise detalhada e apresentação profissional.
+            </div>
+            <a href="cladograma_interativo_macrofitas_funcional_filtros_zoom_teste_pronto.html" class="btn btn-primary">Abrir Cladograma Avançado →</a>
+        </div>
+
+        <div class="card info">
+            <div class="card-icon">🌳</div>
+            <div class="card-title">Cladograma Interativo (Simples)</div>
+            <div class="card-desc">
+                Visualização rápida e intuitiva das relações taxonômicas entre filos, classes, ordens, famílias, gêneros e espécies de macrófitas. Permite explorar a estrutura geral do grupo, identificar padrões evolutivos e navegar pela árvore de forma leve, sem filtros avançados. Recomendado para consultas rápidas e uso didático.
+            </div>
+            <a href="cladograma_interativo_melhorado.html" class="btn btn-info">Abrir Cladograma Simples →</a>
+        </div>
+
+        <div class="card success">
+            <div class="card-icon">🗺️</div>
+            <div class="card-title">Mapa Google (GPS)</div>
+            <div class="card-desc">
+                Mapa interativo integrado ao Google Maps, exibindo as estações de coleta das macrófitas marinhas com coordenadas GPS reais. Permite visualizar a distribuição espacial das espécies na Ilha de Santa Catarina, explorar pontos de amostragem, obter detalhes de cada local e analisar padrões geográficos de biodiversidade. Ferramenta útil para planejamento de campo, ensino e divulgação científica.
+            </div>
+            <a href="mapa_google_macrofitas.html" class="btn btn-success">Abrir Google Maps →</a>
+        </div>
+    </div>
+
+    <div class="features" id="dataInfo" style="display: none;">
+        <h2>📁 Arquivos de Dados Disponíveis</h2>
+        <ul>
+            <li><strong>hierarquia_taxonomica.json</strong> - Estrutura completa Filo → Gênero</li>
+            <li><strong>tabela3_macroalgas_enriquecida.csv</strong> - Dados com informações taxonômicas</li>
+            <li><strong>tabela3_nome_genero_algas.csv</strong> - Lista simples de nomes e gêneros</li>
+            <li><strong>distribuicao_geografica.json</strong> - Dados de distribuição por localidades</li>
+            <li><strong>tabela3_macroalgas_nome_genero.csv</strong> - Dados originais do artigo</li>
+            <li><strong>gerador_dados_cladograma.py</strong> - Script Python para gerar os dados</li>
+        </ul>
+    </div>
+
+    <div class="features">
+        <h2>✨ Características Principais</h2>
+        <ul>
+            <li>✅ Interface interativa com D3.js</li>
+            <li>✅ Modo claro e escuro</li>
+            <li>✅ Pesquisa e filtros em tempo real</li>
+            <li>✅ Informações detalhadas ao clicar</li>
+            <li>✅ Exportação em SVG</li>
+            <li>✅ Zoom e panning</li>
+            <li>✅ Tooltips com hover</li>
+            <li>✅ Dados estruturados em JSON</li>
+            <li>✅ Responsivo para mobile</li>
+            <li>✅ Sem dependências externas (exceto D3.js CDN)</li>
+        </ul>
+    </div>
+
+    <div class="features">
+        <h2>🔬 Sobre o Estudo</h2>
+        <p style="color: #666; line-height: 1.8; margin: 10px 0;">
+            <strong>Título:</strong> Macrófitas Marinhas da Ilha de Santa Catarina, Brasil<br>
+            <strong>Autora:</strong> Manuela Bernardes Batista<br>
+            <strong>Orientador:</strong> Eurico Cabral de Oliveira Filho<br>
+            <strong>Co-orientador:</strong> Paulo Antunes Horta Júnior<br>
+            <strong>Instituição:</strong> UFSC - Programa de Pós-Graduação em Biologia Vegetal<br>
+            <strong>Ano:</strong> 2012<br><br>
+            Este estudo descreveu a estrutura das comunidades de macrófitas da região entre marés da Ilha de Santa Catarina, bem como suas variações temporais e a influência de descritores ambientais. Foram encontradas 163 espécies, sendo 96 Rhodophyta, 34 Phaeophyceae e 31 Chlorophyta, adicionando 67 novas ocorrências para a flora da Ilha.
+        </p>
+    </div>
+
+    <div class="features">
+        <h2>📚 Glossário de Termos</h2>
+        <button id="toggleGlossary" class="btn btn-info" style="margin-bottom:12px;">Mostrar/Ocultar Glossário</button>
+        <div id="glossaryBox" style="display:none;">
+            <ul style="column-count:2; gap:32px; max-width:900px;">
+                <li><b>Macrófitas:</b> Plantas aquáticas visíveis a olho nu, incluindo algas, gramíneas e plantas superiores.</li>
+                <li><b>Filo:</b> Categoria taxonômica que agrupa organismos com características estruturais semelhantes.</li>
+                <li><b>Classe:</b> Subdivisão do filo, agrupando ordens com características comuns.</li>
+                <li><b>Ordem:</b> Categoria taxonômica abaixo de classe, agrupando famílias relacionadas.</li>
+                <li><b>Família:</b> Agrupa gêneros próximos evolutivamente.</li>
+                <li><b>Gênero:</b> Conjunto de espécies intimamente relacionadas.</li>
+                <li><b>Espécie:</b> Unidade básica da classificação biológica, grupo de organismos capazes de se reproduzir entre si.</li>
+                <li><b>Cladograma:</b> Diagrama em árvore que mostra relações evolutivas entre grupos de organismos.</li>
+                <li><b>Filogenia:</b> História evolutiva e relações de ancestralidade entre organismos.</li>
+                <li><b>Biodiversidade:</b> Variedade de formas de vida em um ambiente.</li>
+                <li><b>Estação de Coleta:</b> Local onde amostras biológicas são coletadas para estudo.</li>
+                <li><b>GPS:</b> Sistema de Posicionamento Global, usado para registrar coordenadas geográficas.</li>
+                <li><b>Distribuição Geográfica:</b> Área onde uma espécie ou grupo ocorre naturalmente.</li>
+                <li><b>Transecto:</b> Linha ou percurso definido para amostragem padronizada em campo.</li>
+                <li><b>Taxonomia:</b> Ciência de classificação dos seres vivos.</li>
+                <li><b>Exportação SVG:</b> Salvar gráficos em formato vetorial escalável.</li>
+                <li><b>Modo Escuro:</b> Opção de visualização com fundo escuro para conforto visual.</li>
+                <li><b>Filtro:</b> Ferramenta para selecionar subconjuntos de dados com base em critérios.</li>
+                <li><b>Hierarquia Taxonômica:</b> Organização dos seres vivos em níveis (filo, classe, ordem, família, gênero, espécie).</li>
+                <li><b>Tooltips:</b> Caixas de informação exibidas ao passar o mouse sobre elementos interativos.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+    document.getElementById('toggleGlossary').onclick = function() {
+        var box = document.getElementById('glossaryBox');
+        box.style.display = (box.style.display === 'none') ? 'block' : 'none';
+    };
+    </script>
+
+    <div class="footer">
+        <p>Visualizações criadas com D3.js | Dados processados com Python | Autor: Ronan Armando Caetano | © 2024</p>
+    </div>
+</div>
+
+<script>
+function toggleTheme() {
+    const isDark = document.body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', isDark);
+    document.querySelector('.theme-toggle').textContent = isDark ? '☀️' : '🌙';
+}
+
+function showDataInfo() {
+    const elem = document.getElementById('dataInfo');
+    elem.style.display = elem.style.display === 'none' ? 'block' : 'none';
+}
+
+// Verificar tema salvo
+if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+    document.querySelector('.theme-toggle').textContent = '☀️';
+}
+</script>
+
+</body>
+</html>

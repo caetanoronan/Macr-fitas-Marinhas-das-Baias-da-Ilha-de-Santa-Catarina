@@ -1,0 +1,342 @@
+{
+  "total_especies": 106,
+  "aprovadas": 71,
+  "revisar": 35,
+  "percentual_aprovadas": 66.98,
+  "tipos_pendencia": [
+    "epiteto_indeterminado",
+    "fuzzy_conf_baixa",
+    "match_fraco",
+    "status_nao_aceito",
+    "taxonomia_incompleta"
+  ],
+  "casos_revisar": [
+    {
+      "nome_original": "Blindingia marginata",
+      "nome_publicacao": "Blidingia marginata",
+      "match": "FUZZY",
+      "confidence": 80,
+      "pendencias": [
+        "fuzzy_conf_baixa"
+      ]
+    },
+    {
+      "nome_original": "Bryopsis sp",
+      "nome_publicacao": "Bryopsis sp",
+      "match": "NONE",
+      "confidence": 100,
+      "pendencias": [
+        "epiteto_indeterminado",
+        "taxonomia_incompleta",
+        "match_fraco"
+      ]
+    },
+    {
+      "nome_original": "C. montagneana",
+      "nome_publicacao": "Cladophora montagneana",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "C. sp",
+      "nome_publicacao": "Cladophora sp",
+      "match": "NONE",
+      "confidence": 100,
+      "pendencias": [
+        "epiteto_indeterminado",
+        "taxonomia_incompleta",
+        "match_fraco"
+      ]
+    },
+    {
+      "nome_original": "Enteromorpha clathrata",
+      "nome_publicacao": "Enteromorpha clathrata",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "E. compressa",
+      "nome_publicacao": "Enteromorpha compressa",
+      "match": "EXACT",
+      "confidence": 97,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "E. flexuosa",
+      "nome_publicacao": "Enteromorpha flexuosa",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "E. lingulata",
+      "nome_publicacao": "Enteromorpha lingulata",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "E. linza",
+      "nome_publicacao": "Enteromorpha linza",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "E. sp",
+      "nome_publicacao": "Enteromorpha sp",
+      "match": "HIGHERRANK",
+      "confidence": 94,
+      "pendencias": [
+        "epiteto_indeterminado",
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "Willella ordinata",
+      "nome_publicacao": "Willeella ordinata",
+      "match": "FUZZY",
+      "confidence": 85,
+      "pendencias": [
+        "fuzzy_conf_baixa"
+      ]
+    },
+    {
+      "nome_original": "Dictyota cervicornis",
+      "nome_publicacao": "Dictyota cervicornis",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "D. sp",
+      "nome_publicacao": "Dictyota sp",
+      "match": "NONE",
+      "confidence": 100,
+      "pendencias": [
+        "epiteto_indeterminado",
+        "taxonomia_incompleta",
+        "match_fraco"
+      ]
+    },
+    {
+      "nome_original": "Feldmania irregularis",
+      "nome_publicacao": "Feldmannia irregularis",
+      "match": "FUZZY",
+      "confidence": 80,
+      "pendencias": [
+        "fuzzy_conf_baixa"
+      ]
+    },
+    {
+      "nome_original": "Hincksia mitchelliae",
+      "nome_publicacao": "Hincksia mitchelliae",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "Lobofora variegata",
+      "nome_publicacao": "Lobofora variegata",
+      "match": "NONE",
+      "confidence": 100,
+      "pendencias": [
+        "taxonomia_incompleta",
+        "match_fraco"
+      ]
+    },
+    {
+      "nome_original": "S. sp",
+      "nome_publicacao": "Sphacelaria sp",
+      "match": "HIGHERRANK",
+      "confidence": 94,
+      "pendencias": [
+        "epiteto_indeterminado"
+      ]
+    },
+    {
+      "nome_original": "Acrochaetium codicola",
+      "nome_publicacao": "Acrochaetium codicola",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "Aghardhiella subulata",
+      "nome_publicacao": "Aghardhiella subulata",
+      "match": "NONE",
+      "confidence": 100,
+      "pendencias": [
+        "taxonomia_incompleta",
+        "match_fraco"
+      ]
+    },
+    {
+      "nome_original": "Aglaothamniom felliponei",
+      "nome_publicacao": "Aglaothamnion felipponei",
+      "match": "FUZZY",
+      "confidence": 85,
+      "pendencias": [
+        "fuzzy_conf_baixa"
+      ]
+    },
+    {
+      "nome_original": "A. uruguayense",
+      "nome_publicacao": "Aglaothamnion uruguayense",
+      "match": "FUZZY",
+      "confidence": 85,
+      "pendencias": [
+        "fuzzy_conf_baixa"
+      ]
+    },
+    {
+      "nome_original": "Arthrocardia flabelata",
+      "nome_publicacao": "Arthrocardia flabelata",
+      "match": "FUZZY",
+      "confidence": 96,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "A. gardneri",
+      "nome_publicacao": "Arthrocardia gardneri",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "Bryothamniom seaforthii",
+      "nome_publicacao": "Bryothamniom seaforthii",
+      "match": "FUZZY",
+      "confidence": 84,
+      "pendencias": [
+        "fuzzy_conf_baixa",
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "C. sp",
+      "nome_publicacao": "Ceramium sp",
+      "match": "HIGHERRANK",
+      "confidence": 92,
+      "pendencias": [
+        "epiteto_indeterminado",
+        "taxonomia_incompleta"
+      ]
+    },
+    {
+      "nome_original": "Galaxaura marginata",
+      "nome_publicacao": "Galaxaura marginata",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "Gelidiella trinitatensis",
+      "nome_publicacao": "Gelidiella trinitatensis",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "Gelidiopsis variabilis",
+      "nome_publicacao": "Gelidiopsis variabilis",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "Grateloupia cuneifólia",
+      "nome_publicacao": "Grateloupia cuneifólia",
+      "match": "NONE",
+      "confidence": 100,
+      "pendencias": [
+        "taxonomia_incompleta",
+        "match_fraco"
+      ]
+    },
+    {
+      "nome_original": "L. obtusa",
+      "nome_publicacao": "Laurencia obtusa",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "L. sp",
+      "nome_publicacao": "Laurencia sp",
+      "match": "HIGHERRANK",
+      "confidence": 92,
+      "pendencias": [
+        "epiteto_indeterminado"
+      ]
+    },
+    {
+      "nome_original": "Neosiphonia sphaerocarpa",
+      "nome_publicacao": "Neosiphonia sphaerocarpa",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "P. subtilissima",
+      "nome_publicacao": "Polysiphonia subtilissima",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "P. ferulacea",
+      "nome_publicacao": "Polysiphonia ferulacea",
+      "match": "EXACT",
+      "confidence": 97,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    },
+    {
+      "nome_original": "Pterosiphonia parasitica",
+      "nome_publicacao": "Pterosiphonia parasitica",
+      "match": "EXACT",
+      "confidence": 98,
+      "pendencias": [
+        "status_nao_aceito"
+      ]
+    }
+  ]
+}

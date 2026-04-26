@@ -1,0 +1,13 @@
+Estacao,Sigla,Latitude,Longitude,Biomassa_Media_gm2,Descricao_Local,Principais_Algas
+1,PAL,27°20'00"S,48°31'36"W,345.0,Palmas (Gouv. Celso Ramos),"Sargassum stenophylum, Hypnea musciformis"
+2,PCA,27°23'36"S,48°26'00"W,240.0,Ponta das Canas (Ilha),"Sargassum stenophylum, Amphiroa beauvoisii"
+3,ANT,27°25'42"S,48°34'18"W,132.0,Praia do Antenor (G.C.R.),"Hypnea musciformis, Acanthophora spicifera"
+4,SAM,27°29'18"S,48°32'24"W,161.0,Sambaqui (Ilha),"Sargassum filipendula, Hypnea musciformis"
+5,BAR,27°38'42"S,48°37'42"W,40.0,Barreiros (Continente),"Bostrychia radicans, Enteromorpha flexuosa"
+6,PCO,27°34'12"S,48°32'12"W,135.0,Ponta do Coral (Ilha),"Gelidium crinale, Chondracanthus acicularis"
+7,COQ,27°36'12"S,48°34'24"W,60.0,Coqueiros (Continente),"Centroceras clavulatum, Gelidium crinale"
+8,SAC,27°36'48"S,48°33'12"W,100.0,Saco dos Limões (Ilha),"Enteromorpha flexuosa, Bostrychia radicans"
+9,PBA,27°32'54"S,48°36'42"W,18.5,Ponta de Baixo (Continente),"Bostrychia radicans, Chaetomorpha gracilis"
+10,RIB,27°43'54"S,48°33'54"W,78.0,Ribeirao da Ilha (Ilha),"Gelidiopsis variabilis, Spyridia filamentosa"
+11,CAI,27°48'48"S,48°33'42"W,55.0,Caieira da Barra do Sul (Ilha),"Sargassum stenophylum, Codium decorticatum"
+12,PAP,27°50'42"S,48°34'36"W,506.4,Ponta do Papagaio (Palhoca),"Arthrocardia flabelata, Amphiroa fragilissima"

@@ -1,0 +1,13 @@
+Estação,Sigla,Latitude (S),Longitude (W),Localização
+1,PAL,27∘20′00′′,48∘31′36′′,Palmas (Gouv. Celso Ramos)
+2,PCA,27∘23′36′′,48∘26′00′′,Ponta das Canas (Ilha)
+3,ANT,27∘25′42′′,48∘34′18′′,Praia do Antenor (G.C.R.)
+4,SAM,27∘29′18′′,48∘32′24′′,Sambaqui (Ilha)
+5,BAR,27∘38′42′′,48∘37′42′′,Barreiros (Continente)
+6,PCO,27∘34′12′′,48∘32′12′′,Ponta do Coral (Ilha)
+7,COQ,27∘36′12′′,48∘34′24′′,Coqueiros (Continente)
+8,SAC,27∘36′48′′,48∘33′12′′,Saco dos Limões (Ilha)
+9,PBA,27∘32′54′′,48∘36′42′′,Ponta de Baixo (Continente)
+10,RIB,27∘43′54′′,48∘33′54′′,Ribeirão da Ilha (Ilha)
+11,PAP,27∘50′42′′,48∘34′36′′,Ponta do Papagaio (Palhoça)
+12,CAI,27∘48′48′′,48∘33′42′′,Caieira da Barra do Sul (Ilha)

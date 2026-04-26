@@ -1,0 +1,354 @@
+[
+  {
+    "estacao": 1,
+    "sigla": "PAL",
+    "latitude": -27.3333333,
+    "longitude": -48.5266667,
+    "biomassa_media_gm2": 345.0,
+    "riqueza_taxons": 48,
+    "lista_qualitativa_algas": [
+      "Chaetomorpha antennina",
+      "Cladophora prolifera",
+      "C. sp.",
+      "Codium decorticatum",
+      "Colpomenia sinuosa",
+      "Dictyopteris delicatula",
+      "Galaxaura marginata",
+      "Hypnea musciformis",
+      "Laurencia flagellifera",
+      "Sargassum filipendula",
+      "S. stenophylum",
+      "Sphacelaria brachygonia",
+      "S. tribuloides",
+      "Pleonosporium polystichum"
+    ],
+    "total_algas_lista": 14,
+    "descricao_local": "Palmas (Gouv. Celso Ramos)",
+    "principais_algas": [
+      "Sargassum stenophylum",
+      "Hypnea musciformis"
+    ],
+    "localizacao": "Palmas (Gouv. Celso Ramos)"
+  },
+  {
+    "estacao": 2,
+    "sigla": "PCA",
+    "latitude": -27.3933333,
+    "longitude": -48.4333333,
+    "biomassa_media_gm2": 240.0,
+    "riqueza_taxons": 43,
+    "lista_qualitativa_algas": [
+      "Chaetomorpha antennina",
+      "Cladophora vagabunda",
+      "Enteromorpha lingulata",
+      "Asteronema breviarticulatus",
+      "Bachelotia antillarum",
+      "Colpomenia sinuosa",
+      "Sargassum stenophylum",
+      "Sphacelaria brachygonia",
+      "Amphiroa beauvoisii",
+      "A. fragilissima",
+      "Arthrocardia sp.",
+      "Centroceras clavulatum",
+      "Hypnea musciformis",
+      "Jania adhaerens",
+      "Laurencia obtusa"
+    ],
+    "total_algas_lista": 15,
+    "descricao_local": "Ponta das Canas (Ilha)",
+    "principais_algas": [
+      "Sargassum stenophylum",
+      "Amphiroa beauvoisii"
+    ],
+    "localizacao": "Ponta das Canas (Ilha)"
+  },
+  {
+    "estacao": 3,
+    "sigla": "ANT",
+    "latitude": -27.4283333,
+    "longitude": -48.5716667,
+    "biomassa_media_gm2": 132.0,
+    "riqueza_taxons": 39,
+    "lista_qualitativa_algas": [
+      "Cladophora prolifera",
+      "Enteromorpha flexuosa",
+      "E. lingulata",
+      "Bachelotia antillarum",
+      "Colpomenia sinuosa",
+      "Dictyopteris delicatula",
+      "D. menstrualis",
+      "Padina gymnospora",
+      "Sargassum filipendula",
+      "Acanthophora spicifera",
+      "Bryothamniom seaforthii",
+      "Centroceras clavulatum",
+      "Chondria polyrhiza",
+      "Gelidiopsis variabilis",
+      "Gelidium crinale",
+      "Hypnea musciformis",
+      "Laurencia flagellifera"
+    ],
+    "total_algas_lista": 17,
+    "descricao_local": "Praia do Antenor (G.C.R.)",
+    "principais_algas": [
+      "Hypnea musciformis",
+      "Acanthophora spicifera"
+    ],
+    "localizacao": "Praia do Antenor (G.C.R.)"
+  },
+  {
+    "estacao": 4,
+    "sigla": "SAM",
+    "latitude": -27.4883333,
+    "longitude": -48.54,
+    "biomassa_media_gm2": 161.0,
+    "riqueza_taxons": 35,
+    "lista_qualitativa_algas": [
+      "Chaetomorpha gracilis",
+      "Cladophora prolifera",
+      "C. sp.",
+      "Enteromorpha flexuosa",
+      "Bachelotia antillarum",
+      "Dictyopteris delicatula",
+      "Dictyota cervicornis",
+      "D. menstrualis",
+      "Padina gymnospora",
+      "Sargassum filipendula",
+      "S. vulgare",
+      "Asparagopsis taxiformis",
+      "Centroceras clavulatum",
+      "Gelidiopsis variabilis",
+      "Gelidium crinale",
+      "G. floridanum",
+      "Hypnea musciformis",
+      "Laurencia flagellifera"
+    ],
+    "total_algas_lista": 18,
+    "descricao_local": "Sambaqui (Ilha)",
+    "principais_algas": [
+      "Sargassum filipendula",
+      "Hypnea musciformis"
+    ],
+    "localizacao": "Sambaqui (Ilha)"
+  },
+  {
+    "estacao": 5,
+    "sigla": "BAR",
+    "latitude": -27.645,
+    "longitude": -48.6283333,
+    "biomassa_media_gm2": 40.0,
+    "riqueza_taxons": 6,
+    "lista_qualitativa_algas": [
+      "Enteromorpha flexuosa",
+      "E. lingulata",
+      "Ulva lactuca",
+      "Bachelotia antillarum",
+      "Bostrychia radicans",
+      "Cianofitas"
+    ],
+    "total_algas_lista": 6,
+    "descricao_local": "Barreiros (Continente)",
+    "principais_algas": [
+      "Bostrychia radicans",
+      "Enteromorpha flexuosa"
+    ],
+    "localizacao": "Barreiros (Continente)"
+  },
+  {
+    "estacao": 6,
+    "sigla": "PCO",
+    "latitude": -27.57,
+    "longitude": -48.5366667,
+    "biomassa_media_gm2": 135.0,
+    "riqueza_taxons": 19,
+    "lista_qualitativa_algas": [
+      "Cladophora sp.",
+      "C. vagabunda",
+      "Enteromorpha lingulata",
+      "Ulva fasciata",
+      "Bostrychia radicans",
+      "Centroceras clavulatum",
+      "Ceramium brasiliense",
+      "Chondracanthus acicularis",
+      "Gelidium crinale",
+      "G. pusillum",
+      "Spyridia filamentosa"
+    ],
+    "total_algas_lista": 11,
+    "descricao_local": "Ponta do Coral (Ilha)",
+    "principais_algas": [
+      "Gelidium crinale",
+      "Chondracanthus acicularis"
+    ],
+    "localizacao": "Ponta do Coral (Ilha)"
+  },
+  {
+    "estacao": 7,
+    "sigla": "COQ",
+    "latitude": -27.6033333,
+    "longitude": -48.5733333,
+    "biomassa_media_gm2": 60.0,
+    "riqueza_taxons": 19,
+    "lista_qualitativa_algas": [
+      "Bryopsis sp.",
+      "Chaetomorpha gracilis",
+      "Cladophora prolifera",
+      "Enteromorpha lingulata",
+      "E. linza",
+      "Ulva lactuca",
+      "Bachelotia antillarum",
+      "Bostrychia radicans",
+      "Centroceras clavulatum",
+      "Chondria polyrhiza",
+      "Gelidium crinale",
+      "Gymnogongrus griffithsiae"
+    ],
+    "total_algas_lista": 12,
+    "descricao_local": "Coqueiros (Continente)",
+    "principais_algas": [
+      "Centroceras clavulatum",
+      "Gelidium crinale"
+    ],
+    "localizacao": "Coqueiros (Continente)"
+  },
+  {
+    "estacao": 8,
+    "sigla": "SAC",
+    "latitude": -27.6133333,
+    "longitude": -48.5533333,
+    "biomassa_media_gm2": 100.0,
+    "riqueza_taxons": 15,
+    "lista_qualitativa_algas": [
+      "Chaetomorpha gracilis",
+      "Cladophora albida",
+      "Cladophoropsis membrenacea",
+      "Enteromorpha flexuosa",
+      "Ulva lactuca",
+      "Bostrychia radicans",
+      "Centroceras clavulatum",
+      "Ceramium brasiliense",
+      "Chondracanthus acicularis",
+      "Gelidiella trinitatensis"
+    ],
+    "total_algas_lista": 10,
+    "descricao_local": "Saco dos Limões (Ilha)",
+    "principais_algas": [
+      "Enteromorpha flexuosa",
+      "Bostrychia radicans"
+    ],
+    "localizacao": "Saco dos Limões (Ilha)"
+  },
+  {
+    "estacao": 9,
+    "sigla": "PBA",
+    "latitude": -27.5483333,
+    "longitude": -48.6116667,
+    "biomassa_media_gm2": 18.5,
+    "riqueza_taxons": 4,
+    "lista_qualitativa_algas": [
+      "Chaetomorpha gracilis",
+      "Bostrychia radicans"
+    ],
+    "total_algas_lista": 2,
+    "descricao_local": "Ponta de Baixo (Continente)",
+    "principais_algas": [
+      "Bostrychia radicans",
+      "Chaetomorpha gracilis"
+    ],
+    "localizacao": "Ponta de Baixo (Continente)"
+  },
+  {
+    "estacao": 10,
+    "sigla": "RIB",
+    "latitude": -27.7316667,
+    "longitude": -48.565,
+    "biomassa_media_gm2": 78.0,
+    "riqueza_taxons": 69,
+    "lista_qualitativa_algas": [
+      "Cladophora sp.",
+      "Codium taylorii",
+      "Enteromorpha flexuosa",
+      "Padina gymnospora",
+      "Sargassum filipendula",
+      "Acanthophora spicifera",
+      "Centroceras clavulatum",
+      "Ceramium brasiliense",
+      "C. luetzelburgii",
+      "Chondracanthus acicularis",
+      "Gelidiopsis variabilis",
+      "Gelidium crinale",
+      "Herposiphonia secunda",
+      "Hypnea musciformis",
+      "Spyridia filamentosa"
+    ],
+    "total_algas_lista": 15,
+    "descricao_local": "Ribeirao da Ilha (Ilha)",
+    "principais_algas": [
+      "Gelidiopsis variabilis",
+      "Spyridia filamentosa"
+    ],
+    "localizacao": "Ribeirão da Ilha (Ilha)"
+  },
+  {
+    "estacao": 11,
+    "sigla": "CAI",
+    "latitude": -27.8133333,
+    "longitude": -48.5616667,
+    "biomassa_media_gm2": 55.0,
+    "riqueza_taxons": 45,
+    "lista_qualitativa_algas": [
+      "Cladophora albida",
+      "C. sp.",
+      "Cladophoropsis membrenacea",
+      "Codium decorticatum",
+      "Enteromorpha flexuosa",
+      "Bachelotia antillarum",
+      "Sargassum stenophylum",
+      "Acanthophora spicifera",
+      "Centroceras clavulatum",
+      "Ceramium brasiliense",
+      "Chondracanthus acicularis",
+      "C. teedei",
+      "Gelidium crinale",
+      "G. pusillum",
+      "Hypnea musciformis"
+    ],
+    "total_algas_lista": 15,
+    "descricao_local": "Caieira da Barra do Sul (Ilha)",
+    "principais_algas": [
+      "Sargassum stenophylum",
+      "Codium decorticatum"
+    ],
+    "localizacao": "Caieira da Barra do Sul (Ilha)"
+  },
+  {
+    "estacao": 12,
+    "sigla": "PAP",
+    "latitude": -27.845,
+    "longitude": -48.5766667,
+    "biomassa_media_gm2": 506.4,
+    "riqueza_taxons": 35,
+    "lista_qualitativa_algas": [
+      "Chaetomorpha antennina",
+      "Cladophora prolifera",
+      "C. vagabunda",
+      "Ulva fasciata",
+      "Colpomenia sinuosa",
+      "Hincksia mitchelliae",
+      "Sargassum vulgare",
+      "Amphiroa fragilissima",
+      "Arthrocardia flabelata",
+      "A. gardneri",
+      "Centroceras clavulatum",
+      "Hypnea musciformis",
+      "Jania rubens"
+    ],
+    "total_algas_lista": 13,
+    "descricao_local": "Ponta do Papagaio (Palhoca)",
+    "principais_algas": [
+      "Arthrocardia flabelata",
+      "Amphiroa fragilissima"
+    ],
+    "localizacao": "Ponta do Papagaio (Palhoça)"
+  }
+]
